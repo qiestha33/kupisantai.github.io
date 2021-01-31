@@ -116,7 +116,7 @@ I hope, to make some contribution on this Platform Aaamiin Yra.<br>
   </ol>
   <div class="carousel-inner">
     <div class="carousel-item active" data-bs-interval="10000">
-      <img src="..." class="d-block w-100" alt="...">
+      <img src="https://github.com/qiestha33/qiestha33.github.io/blob/master/phishing-isometric-landing-page-web-banner/25Z_2101.w003.n001.89B.p12.89.jpg?raw=true" class="d-block w-100" alt="Kepo!">
       <div class="carousel-caption d-none d-md-block">
         <h5>First slide label</h5>
         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
