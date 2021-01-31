@@ -2,94 +2,88 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <title> Hola GitChub!</title>
   </head>
-	<style>
-	* {margin:0; padding:0;}
-	 
-	body {
-	 background-color:#fff;
-	 font-family:Arial, Helvetica, sans-serif;
-	 color:#000;
-	}
-
-	nav {
-	 margin:auto;
-	 text-align: center;
-	 width: 100%;
-	} 
-
-	nav ul ul {
-	 display: none;
-	}
-
-	nav ul li:hover > ul{
-	display: block;
-	width: 150px;
-	}
-
-	nav ul {
-	 background: #53bd84;
-	 padding: 0 20px;
-	 list-style: none;
-	 position: relative;
-	 display: inline-table;
-	 width: 100%;
-	}
-
-	nav ul:after {
-	 content: ""; 
-	 clear:both; 
-	 display: block;
-	}
-
-	nav ul li{
-	 float:left;
-	}
-
-	nav ul li:hover{
-	 background:#666;
-	}
-
-	nav ul li:hover a{
-	 color:#fff;
-	}
-
-	nav ul li a{
-	 display: block;
-	 padding: 25px;
-	 color: #fff;
-	 text-decoration: none;
-	}
-
-	nav ul ul{
-	 background: #53bd84;
-	 border-radius: 0px;
-	 padding: 0;
-	 position: absolute;
-	 top:100%;
-	}
-
-	nav ul ul li{
-	 float:none;
-	 border-top: 1px soild #53bd84;
-	 border-bottom: 1px solid #53bd84;
-	 position: relative;
-	}
-
-	nav ul ul li a{
-	 padding: 15px 40px;
-	 color: #fff;
-	}
-
-	nav ul ul li a:hover{
-	 background-color: #666;
-	}
-
-	nav ul ul ul{
-	 position: absolute;
-	 left: 100%;
-	 top: 0;
-	}
-  </style>
+<style>.logo{
+    background-image: url(https://skylightanimation.github.io/kalimantan/assets/img/SkyLight_Animation.png);
+    width: 40px;
+    margin: 4px 14px;
+    height: 40px;
+    background-size: 40px 40px;
+    border: solid 2px #666;
+    border-radius: 50px;
+    background-color: #fff
+}
+.navbar-left{
+    float:left;
+}
+.navbar-right{
+    float:right;
+    width:260px;
+    padding-right:10px;
+}
+.navbar{width:auto;
+    height:50px;
+    background:#444;
+    border-radius:2px;
+}
+ 
+.navbar ul{
+    float:left;
+    margin:0;
+    padding:0;
+}
+.navbar li{
+    float:left;
+    list-style:none;
+    margin:0;
+    padding:0;
+}
+.navbar li a, .navbar li a:link {
+    float: left;
+    padding: 17px 12px;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.navbar li a:hover{
+    background: #ddd;
+    color: #444;
+}
+.navbar li li a, .navbar li li a:link {
+    text-decoration: none;
+    font-size: 16px;
+    background: #444;
+    color: #fff;
+    width: 108px;
+    padding: 0px 0px 0 12px;
+    font-size: 12px;
+    line-height: 35px;
+}
+.navbar li li a:hover{
+    background: #ddd;
+    color: #444
+}
+.navbar li ul{
+    z-index:9999;
+    position:absolute;
+    left:-999em;
+    height:auto;
+    width:120px;
+    margin-top:50px;
+    border:1px solid #666;
+}
+.navbar li:hover ul,
+.navbar li li:hover ul,
+.navbar li li li:hover ul{left:auto;}
+.navbar li:hover{position:auto;}
+li a#dropdown{
+    width: 96%;
+    height: 50%;
+    background-color: #9BC7D3;
+    padding-left :5px;
+}
+</style>
   
   <body>
 <img src="https://1.bp.blogspot.com/-GA-cd2vs_Ic/Xb_RYE5C6qI/AAAAAAAACM0/XbfQQxol7cYo0SNWJyL5WXe7x0X_FpMrACLcBGAsYHQ/s320/Me.jpg" alt="Background" align=center width="200" height="200"> <br> <center><h1>Hallo GitChub!</h1></center>
@@ -101,21 +95,20 @@ I'd like to Use Free Open Source Software for my daily work activity.
 #Committed to FOSS Enthusiast, is my mission to showing that we can use the software without <marquee width="300">{Pirated Software}</marquee>
 I hope, to make some contribution on this Platform Aaamiin Yra.<br>
 <nav>
-	<ul>
-	 	<li><a href="#">Home</a></li>
-	 	<li><a href="#">Input</a>
-		 	<ul>
-			 	<li><a href="#">Anggota</a></li>
-			 	<li><a href="#">Buku</a></li>
-			 	<li><a href="#">Kategori Buku</a></li>
-		 	</ul>
- 		</li>
- 		<li><a href="#">Transaksi</a>
-		 	<ul>
-			 	<li><a href="#">Peminjaman</a></li>
-			 	<li><a href="#">Pengembalian</a></li>
-		 	</ul>
-		</li>
- 		<li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
-	</ul>
+	 
+<nav class="navbar">
+    <div class="navbar-left"><div class="logo"></div></div>
+    <div class="navbar-right">
+        <ul>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a>More &nabla;</a>
+                <ul class="dropdown-list">
+                    <li><a class="dropdown" href="#">archive</a></li>
+                    <li><a class="dropdown" href="#">popular</a></li>
+                </ul>
+            </li>
+            <li><a href='#'>Test</a></li>
+        </ul>
+    </div>
 </nav>
