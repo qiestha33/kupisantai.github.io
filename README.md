@@ -3,16 +3,7 @@
   <title> Hola GitChub!</title>
   </head>
 <style>
-.logo{
-    background-image: url(https://skylightanimation.github.io/kalimantan/assets/img/SkyLight_Animation.png);
-    width: 40px;
-    margin: 4px 14px;
-    height: 40px;
-    background-size: 40px 40px;
-    border: solid 2px #666;
-    border-radius: 50px;
-    background-color: #fff
-}
+
 .navbar-left{
     float:left;
 }
