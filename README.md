@@ -99,7 +99,7 @@ li a#dropdown{
 	<center><h1>Hallo GitChub!</h1></center>
 <audio controls="true">
 	<source src="/Music/Al Araf-Taqy Malik.mp3" type="audio/mpeg">
-	</audio>
+	width="600px" height="200px" </audio><br>
 Assalamualaikum, Hai!!:v:, i'm Haba Qiestha, i Currently as Learner Software Engineer since 2021, on January 2021, i started using Kotlin, Java as main based Mobile Application Programming, also contribute in www.kupisantai.com as entity Portfolio.
 
 GitHub Project Manajement#DevOps Engineer, that's can relate to Showing my Contribute in Programming Socializm.
