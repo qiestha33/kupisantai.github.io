@@ -2,40 +2,94 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
   <title> Hola GitChub!</title>
   </head>
-  <style>
- .dropbtn {
-    background-color: black;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-}
+	<style>
+	* {margin:0; padding:0;}
+	 
+	body {
+	 background-color:#fff;
+	 font-family:Arial, Helvetica, sans-serif;
+	 color:#000;
+	}
 
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
+	nav {
+	 margin:auto;
+	 text-align: center;
+	 width: 100%;
+	} 
 
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: lightgrey;
-    min-width: 200px;
-    z-index: 1;
-}
+	nav ul ul {
+	 display: none;
+	}
 
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-}
+	nav ul li:hover > ul{
+	display: block;
+	width: 150px;
+	}
 
-.dropdown-content a:hover {background-color: white;}
-.dropdown:hover .dropdown-content {display: block;}
-.dropdown:hover .dropbtn {background-color: grey;}
+	nav ul {
+	 background: #53bd84;
+	 padding: 0 20px;
+	 list-style: none;
+	 position: relative;
+	 display: inline-table;
+	 width: 100%;
+	}
 
-</style>
+	nav ul:after {
+	 content: ""; 
+	 clear:both; 
+	 display: block;
+	}
+
+	nav ul li{
+	 float:left;
+	}
+
+	nav ul li:hover{
+	 background:#666;
+	}
+
+	nav ul li:hover a{
+	 color:#fff;
+	}
+
+	nav ul li a{
+	 display: block;
+	 padding: 25px;
+	 color: #fff;
+	 text-decoration: none;
+	}
+
+	nav ul ul{
+	 background: #53bd84;
+	 border-radius: 0px;
+	 padding: 0;
+	 position: absolute;
+	 top:100%;
+	}
+
+	nav ul ul li{
+	 float:none;
+	 border-top: 1px soild #53bd84;
+	 border-bottom: 1px solid #53bd84;
+	 position: relative;
+	}
+
+	nav ul ul li a{
+	 padding: 15px 40px;
+	 color: #fff;
+	}
+
+	nav ul ul li a:hover{
+	 background-color: #666;
+	}
+
+	nav ul ul ul{
+	 position: absolute;
+	 left: 100%;
+	 top: 0;
+	}
+  </style>
   
   <body>
 <img src="https://1.bp.blogspot.com/-GA-cd2vs_Ic/Xb_RYE5C6qI/AAAAAAAACM0/XbfQQxol7cYo0SNWJyL5WXe7x0X_FpMrACLcBGAsYHQ/s320/Me.jpg" alt="Background" align=center width="200" height="200"> <br> <center><h1>Hallo GitChub!</h1></center>
@@ -45,15 +99,23 @@ GitHub Project Manajement#DevOps Engineer, that's can relate to Showing my Contr
 I'd like to Use Free Open Source Software for my daily work activity.
 
 #Committed to FOSS Enthusiast, is my mission to showing that we can use the software without <marquee width="300">{Pirated Software}</marquee>
-I hope, to make some contribution on this Platform Aaamiin Yra.
-
-<div class="dropdown">
-<button class="dropbtn">Media Sosial</button>
-<div class="dropdown-content">
-
-<a href="https://www.google.com">Google</a>
-<a href="https://www.facebook.com">Facebook</a>
-<a href="https://www.youtube.com">YouTube</a>
-
-  </body>
-
+I hope, to make some contribution on this Platform Aaamiin Yra.<br>
+<nav>
+	<ul>
+	 	<li><a href="#">Home</a></li>
+	 	<li><a href="#">Input</a>
+		 	<ul>
+			 	<li><a href="#">Anggota</a></li>
+			 	<li><a href="#">Buku</a></li>
+			 	<li><a href="#">Kategori Buku</a></li>
+		 	</ul>
+ 		</li>
+ 		<li><a href="#">Transaksi</a>
+		 	<ul>
+			 	<li><a href="#">Peminjaman</a></li>
+			 	<li><a href="#">Pengembalian</a></li>
+		 	</ul>
+		</li>
+ 		<li><a href="#" onClick="return confirm ('Yakin?')">Logout</a></li>
+	</ul>
+</nav>
