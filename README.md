@@ -10,7 +10,7 @@
 .navbar-right{
     float:center;
     width:260px;
-    padding-right:10px;
+    padding-center:10px;
 }
 .navbar{width:auto;
     height:50px;
