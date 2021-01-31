@@ -8,7 +8,7 @@
     float:left;
 }
 .navbar-right{
-    float:right;
+    float:center;
     width:260px;
     padding-right:10px;
 }
